@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _15_03_2023_Code_first
 {
-    internal class Human
+   public class Human
     {
         public int Id { get; set; }
         public string Name { get; set; }    
@@ -14,16 +14,16 @@ namespace _15_03_2023_Code_first
         public string Gender { get; set; }
         public int Age { get; set; }
 
-        public Human (string _name, string _fname, string _gender, int _age ) 
+        public Human (string name, string fname, string gender, int age ) 
         {
-        Name = _name;
-            Fname = _fname;
-            Gender = _gender;
-            Age = _age;
+        this.Name = name;
+          this.Fname = fname;
+            this.Gender = gender;
+            this.Age = age;
         }
         public override string ToString()
         {
-            return "Имя "+Name+" Фамилия "+ Fname + " Пол " + Gender + " Возраст " + Age;
+            return "Имя "+this.Name+" Фамилия "+ Fname + " Пол " + Gender + " Возраст " + Age;
         }
 
     }

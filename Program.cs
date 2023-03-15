@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+using _15_03_2023_Code_first;
+using Microsoft.EntityFrameworkCore;
+
+using (Human_Context db = new Human_Context()) ;
